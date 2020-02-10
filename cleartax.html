@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>ClearTax Invest</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="status" id="cleartax"></div>
+    <nav class = "container" style="background-color: #ffffff;">
+        <div class="section-container" id="about-nav">
+            <a href="index.html">Kshitiz Kashyap</a>
+            <div id="inside-nav">
+                <a href="index.html#projects">Projects</a>
+                <a href="about.html">About</a>
+                <a href="Assets/Resume.pdf" target="_blank">Résumé</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container blog-cover" >
+        <img src="Assets/images/cleartax/Cover.png" alt="">
+    </div>
+    <div class="section-container blog-body">
+       <div class="blog-paragraph">
+           <h1 class="blog-heading">System Understanding</h1>
+           <h2 class="blog-subheading">What is Cleartax Invest?</h2>
+           <p>
+            Cleartax Invest is Cleartax's mutual fund investment portal to buy or invest in direct mutual funds from various asset management companies. It shows various insights about the funds to help users in deciding which fund to invest in.
+           </p>
+           <h2 class="blog-subheading">Learning about mutual funds</h2>
+           <p>
+            Before coming to Cleartax, I had very little knowledge about mutual funds. So I dedicated the first week of my internship learning about them - what they exactly were and how they worked. 
+            <br>
+            In a nutshell, mutual funds are made up of money pooled in by a large number of people(having similar investment goals). Fund managers invest this money in a variety of stocks, bonds, and other financial instruments.
+           </p>
+        </div> 
+       <div class="blog-paragraph">
+            <h1 class="blog-heading">Research</h1>
+            <h2 class="blog-subheading">Setting the Goal of Research</h2>
+            <p>The purpose of the user interviews was to understand what is the user's overall process of deciding to invest in a fund, what all Information do they look for in a fund page before investment, and what triggers them to invest.</p>
+            <h2 class="blog-subheading">Preparing the Questionnaire</h2>
+            <ol>
+                Before beginning to interview the users, my mentor told me to prepare a rough questionnaire. I read a couple of articles on how to ask effective and made the first draft. Of course, it was not up to the mark. After some tweaks and suggestions from my mentor, this is how it finally looked-
+                <li>How long have you been investing in MFs?</li>
+                <li>What is your primary motive behind investing in MFs?</li>
+                <li>How do you get to know about the funds you have to invest in?</li>
+                <li>What things do you look for in a fund before deciding to invest in it?</li>
+                <li>How do you proceed after arriving at the CT Invest platform?</li>
+                <li>Do you have any suggestions for us or any problem where we can improve?</li>
+            </ol>
+            <h2 class="blog-subheading">Interviewing the Users</h2>
+            <p>And then came the most challenging part- interviewing the users. I was a bit intimidated, at first, by the idea of talking to users of an actual company But after a couple of calls and realizing how important these calls were for the effectiveness of the final product, I got the hang of it. Overall we called around 100 users and were able to collect data from around 60-70 users.</p>            
+            <h2 class="blog-subheading">Analyzing research data and building insights</h2>
+            <div class="blog-image">
+                <img src="Assets/images/cleartax/data.png" alt="">
+                <p class="image-caption">Compiling all the data in an excel sheet.</p>
+            </div>
+            <ol>
+                <li>Users with little or no financial knowledge and take help from others for investments. They depend on their freinds and family members for investing or contant CT advisors.</li>
+                <li>
+                    <ul>
+                        Users with little or no financial knowledge
+                        <li>They do not research before investing, and they mostly go with the packages and top funds suggested by CT.</li>
+                        <li>If they are investing by themselves, they look for data like return%, risk involved, historical performance, and trusted brand names like HDFC, Mirae, etc.</li>
+                        <li>They calculate the amount they would get on their investments and invest based on that.</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        Users who have financial knowledge
+                        <li>They follow the news, blogs, youtube channels, and other financial websites like Policybazaar, Investopedia, Valueresearchonline, etc.</li>
+                        <li>They generally know about the funds they have to invest in from their sources, so they search for those funds on CT and invest in them.</li>
+                        <li>They check for the funds' return%, NAV, risk, historical performance, exit load, and expense ratio.</li>
+                        <li>Most of them analyze the holdings of the fund in various stocks, both company-wise and sector-wise.Some of these go to websites like Moneycontrol and yahoo finance to check the performance of these stocks.</li>
+                        <li>Most of them compare funds before investing, but only some knew about the compare feature.</li>
+                        <li>Some of them make packages of various types of funds based on their requirements.</li>
+                    </ul>
+                </li>
+            </ol>
+            <ul>
+                Actionable insights:
+                <li>Improving the Fund Portfolio section to show in-depth Information about the distribution % of the fund in various stocks, sectors, equity-debt distribution.</li>
+                <li>Making the Compare Funds feature more noticeable and improving the overall experience of comparing funds.</li>
+                <li>Providing a Share Fund feature.</li>
+                <li>Showing updates and news on the CT platform and how they are affecting a particular fund.</li>
+                <li>Providing users with an option to make their own package of funds.</li>
+                The first two tasks were assigned to me and Rahul(my co-intern in this project) was working on the other three.
+            </ul>
+       </div>
+       <div class="blog-paragraph">
+            <h1 class="blog-heading">Compare Feature</h1>
+            <h2 class="blog-subheading">Tasks</h2>
+            <ul>
+                <li>Many users said that they compared funds but were unaware that the feature was available on CT. So it was required to make the compare fund feature more noticeable on the fund page and home page so that users use this feature on CT.</li>
+                <li>My 2nd task was to improve the overall experience of comparing funds so that users easily choose one fund over the other.</li>
+            </ul>
+            <h2 class="blog-subheading">A bit about comparison tables</h2>
+            <p>Nobody wants to make bad decisions, especially when investments are considered as they involve quite a lot of money. Therefore comparison is one of the most critical activities users perform on the web. 
+                <br>On Cleartax, most users do this by viewing across the details-page of various funds, which makes them remember a lot of information, thus increasing the cognitive load and also increases the interaction cost. So here comes the comparison table into the play. They provide a side by side comparison of products by providing all the necessary information on a single page. Comparison tables work on the compensatory decision-making process, i.e., users might accept a negative attribute as a tradeoff for a more positive one.</p>
+            <h2 class="blog-subheading">Deciding the layout of the comparison table</h2>
+            <p>This was a major decision I had to take before heading on to the wireframes. The current design uses a horizontal table with product attributes in the columns. </p>
+            <div class="blog-image">
+                <img src="Assets/images/cleartax/existing-design.png" alt="">
+                <p class="image-caption">Existing design</p>
+            </div>
+            <p>One of the major pros of the horizontal layout is that the user can add any number of funds to compare. So I went to some of the power investors in the office to get an idea of how many funds they compare in general. They said that mostly they need to decide between 2-3 (max 4) funds, usually in the same category. There was my answer. I decided to go with the vertical layout.</p>
+            <h2 class="blog-subheading">Prioritizing Information to be displayed in the table</h2>            
+            <p>Both the latter type of users use the compare feature. So I needed to prioritize the information so that it serves both kinds of users effectively without leaving the ones with less financial knowledge clueless. This is where my research helped me. With the help of the data collected, I sorted the metrics based on the amount of expertise required to understand that metric.</p>
+            <div class="blog-image">
+                <img src="Assets/images/cleartax/ia.png" alt="">
+                <p class="image-caption">Information Architecture of comparison table.</p>
+            </div>
+            <h2 class="blog-subheading">Wireframes</h2>
+            <p></p>
+            <div class="blog-image">
+                <img src="Assets/images/cleartax/wireframe.png" alt="">
+                <p class="image-caption"></p>
+            </div>
+            <h2 class="blog-subheading">Final Screens</h2>
+            <p>I made the table more scannable by accompanying data with easy-to-understand visual elements.</p>
+            <div class="blog-image">
+                <img src="Assets/images/cleartax/main.png" alt="">
+                <p class="image-caption">New design of Fund Comparison page</p>
+            </div>
+            <div class="blog-image">
+                <img src="Assets/images/cleartax/fund-details.png" alt="">
+                <p class="image-caption">Fund details section</p>
+            </div>
+            <div class="blog-image">
+                <img src="Assets/images/cleartax/returns.png" alt="">
+                <p class="image-caption">Returns section</p>
+            </div>
+            <p>The Risks and Ratios section was made for expert investors as these are some advanced metrics. So I included information about these with how they are effecting the fund so that amateur users can also understand them.
+                            </p>
+            <div class="blog-image">
+                <img src="Assets/images/cleartax/risks.png" alt="">
+                <p class="image-caption">Risk and Ratios section.</p>
+            </div>
+            <div class="blog-image">
+                <img src="Assets/images/cleartax/add-fund.png" alt="">
+                <p class="image-caption">Modal to add fund. The user can also select from the top performing funds in the category being compared.</p>
+            </div>
+            <h2 class="blog-subheading">Making the compare feature more discoverable</h2>
+            <p>In the existing design, the compare feature was below the first fold and hidden between a lot of data. This was the reason why a lot of users didn't know that this feature existed.</p>
+            <div class="blog-image">
+                <img src="Assets/images/cleartax/heatmap.png" alt="">
+                <p class="image-caption">Scroll heatmap of a fund details page.</p>
+            </div>
+            <p>To tackle this, I proposed to shift the link just below the title of the fund to make it more discoverable.</p>
+            <div class="blog-image">
+                <img src="Assets/images/cleartax/new-location.png" alt="">
+                <p class="image-caption">Shifting the compare link at the top.</p>
+            </div>
+        </div>
+        <div class="blog-paragraph">
+            <h1 class="blog-heading">Key Learnings and Takeaways</h1>
+            <p>My internship at ClearTax was my first industry experience in the field of UX design, and I was able to watch how things are done on a professional level. The amount of research going into designing even the smallest of things was quite intriguing.
+                <br><br>Talking to the users was a bit challenging for me, but I accepted it and therefore got more useful insights.
+                <br><br>It was the first time I was working with product managers, and everyone knows how they treat deadlines. So I learned how to work under pressure and meet deadlines but, at the same time, not compromise with the quality of the product.
+                <br><br>Whatever knowledge I have now about the mutual funds and income tax, or the finance world in general, I owe it to ClearTax. This is another thing I love about design. By working on various projects, you get to learn about so many varied fields.
+                <br><br>Also, I acquired some pretty awesome skills in darts and ping-pong :D.</p>
+        </div>
+    </div> 
+    <footer class="container section-container about-footer">
+        <div class="container-row">
+            <div class="footer-heading col-4">
+                <p>Let's <span class="span-yellow">Connect.</span></p>
+            </div>
+            <div class="email col-4">
+                <p>kshitizkashyap1@gmail.com</p>
+            </div>
+            <div class="social col-4">
+                <div class="app-icons-list">
+                    <a class="icon" href="https://www.behance.net/chhavikashe3cf" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a class="icon" href="https://www.instagram.com/chhavi.k16/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a class="icon" href="https://www.facebook.com/chhavi.k16" target="_blank"><i class="fa fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </footer>
+    <link rel="stylesheet" href="Assets/style/style.css"> 
+    <script src="Assets/scripts/main.js"></script>
+</body>
+</html>

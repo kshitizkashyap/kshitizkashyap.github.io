@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Accounts</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="status" id="accounts"></div>
+    <nav class = "container" style="background-color: #ffffff;">
+        <div class="section-container" id="about-nav">
+            <a id="heading" href="index.html">Kshitiz Kashyap</a>
+            <div id="inside-nav">
+                <a href="index.html#projects">Projects</a>
+                <a href="about.html">About</a>
+                <a href="Assets/Resume.pdf" target="_blank">Résumé</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container blog-cover" >
+        <img src="Assets/images/accounts/Cover.png" alt="">
+    </div>
+    <div class="section-container blog-body">
+       <div class="blog-paragraph">
+           <h1 class="blog-heading">About Accounts</h1>
+           <p>
+               Accounts is the central login portal for the apps of SDSLabs( a student-run technical group of IIT Roorkee, which has built various competition hosting platforms and other apps focused on simplifying the lives of students). Accounts provides a single account to access these applications and saves the users from signing in into each of these applications separately. 
+           </p>
+        </div> 
+       <div class="blog-paragraph">
+            <h1 class="blog-heading">My Task</h1>
+            <p>
+            For my first summers in college, I was given the task of understanding the user behavior wrt Accounts, and based on it, redesign the flow of the app and also revamp the UI.
+            </p>   
+        </div>
+       <div class="blog-paragraph">
+            <h1 class="blog-heading">Identifying problems with the existing design</h1>
+            
+            <ol>
+                No redesign is effective without knowing the actual purpose of it.
+                <li><b>Separate Sign-In required for each app:</b><br> The user was required to sign in to Accounts for each app separately every time he visited it.
+                </li>
+                <li><b>End of flow after Signing In:</b><br> Clicking on Sign Up in any app opened Accounts in the same tab, and after signing up, the user reached a dead end with his user profile opened in front of him and no link to redirect him back to the platform he came from. The user had no choice but to open that platform again.
+                
+                    <div class="blog-image">
+                        <img src="Assets/images/accounts/existing-flow.png" alt="">
+                        <p class="image-caption">Existing flow of Accounts</p>
+                    </div>
+                </li>
+                <li><b>Old and Inconsistent UI:</b><br> The existing design was created at the inception of the group (around 2014), so the visuals had got outdated, and since an extensive set of audience visits this portal, revamping the UI was of utmost importance.
+                    <div class="blog-image">
+                        <img src="Assets/images/accounts/existing-ui.png" alt="">
+                        <p class="image-caption">Existing UI of Accounts. 1) Sign Up page, 2) Sign In page, 3) User profile page</p>
+                    </div>
+                </li>
+            </ol>
+            
+       </div>
+       <div class="blog-paragraph">
+            <h1 class="blog-heading">Identifying Use Cases</h1>
+            <ol>
+                SDSLabs has majorly two types of applications-
+                <li><b>Competition Hosting Platforms:</b><br>Platforms on which various technical competitions are held both on national and international levels.</li>
+                <li><b>Platforms aimed at simplifying college lives of students</b> </li>
+            </ol>
+            <p>
+                On talking to developers of the group, I found that Accounts experiences the significant flux of users before any competition is about to start on any of the platforms.<br>
+            </p>
+            <ul>
+                To get a better idea of the users and how they use Accounts, I talked to some of my friends who actively take part in the competitions and those who mostly use the 2nd type of platforms. These were the two primary use cases identified-
+                <li>The user is on one of the competition platforms where the competition is about to start and needs to sign up/log in to participate.</li>
+                <li>The user wants to use the features of the website and therefore needs to sign up / log in.</li>
+            </ul>   
+        </div>
+        <div class="blog-paragraph">
+            <h1 class="blog-heading">Solution</h1>
+            <h2 class="blog-subheading">Correcting the flow</h2>
+            <p>After identifying the use cases, I needed to fix the flow accordingly. My first idea was to instantly redirect the user to the platform from which the user arrived(as Google does). I discussed this with the senior designers of the group, and the major problem with this was that Accounts is not that popular, and people rarely open it directly.  So even to make changes to their account details, they visit Accounts from other platforms. So I decided upon the following flow-</p>
+            <div class="blog-image">
+                <img src="Assets/images/accounts/new-flow.png" alt=""> 
+                <p class="image-caption">Redesigned flow for Accounts</p>
+            </div>
+            <h2 class="blog-subheading">Wireframing</h2>
+            <p>The next step was to turn the flows into designs, so I started wireframing screens </p>
+            <h2 class="blog-subheading">Final Designs</h2>
+            <p>After looking at a lot of inspirations from various websites and after several iterations this is how the final designs looked - </p>
+            <div class="blog-image">
+                <img src="Assets/images/accounts/sign-in.png" alt=""> 
+                <p class="image-caption">Sign In page</p>
+            </div>
+            <div class="blog-image">
+                <img src="Assets/images/accounts/sign-up.png" alt=""> 
+                <p class="image-caption">Steps for Sign Up</p>
+            </div>
+            <div class="blog-image">
+                <img src="Assets/images/accounts/modal-screen.png" alt=""> 
+                <p class="image-caption">Modal to redirect users after sign in.</p>
+            </div>
+            <div class="blog-image">
+                <img src="Assets/images/accounts/user-profile.png" alt=""> 
+                <p class="image-caption">User Profile for the two cases: a)When user comes from an application. b)When user directly signs in to accounts.</p>
+            </div>
+        </div>
+        <div class="blog-paragraph">
+            <h1 class="blog-heading">UI Guidelines</h1>
+            <div class="blog-image">
+                <img src="Assets/images/accounts/ui-guidelines.png" alt="">
+                <p class="image-caption">UI Guidelines for Accounts.</p>
+            </div>
+        </div>
+        <div class="blog-paragraph">
+            <h1 class="blog-heading">Key Learnings and Takeaways</h1>
+            <ul>Every experience leaves a lot for you to learn. This being even truer for the firsts. Accounts was my first project, where I designed the complete product keeping the user requirements in mind. From the user-flows to final UIs, I learned about the various deliverables required from the designer's end. Since a lot of form design was involved, I had to go through multiple articles to improve the form-filling experience of the user. This project also helped me in enhancing my UI skills. Finally, I also collaborated with developers to deliver the final desired product.</ul>
+        </div>
+    </div> 
+    <footer class="container section-container about-footer">
+        <div class="container-row">
+            <div class="footer-heading col-4">
+                <p>Let's <span class="span-yellow">Connect.</span></p>
+            </div>
+            <div class="email col-4">
+                <p>kshitizkashyap1@gmail.com</p>
+            </div>
+            <div class="social col-4">
+                <div class="app-icons-list">
+                    <a class="icon" href="https://www.behance.net/chhavikashe3cf" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a class="icon" href="https://www.instagram.com/chhavi.k16/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a class="icon" href="https://www.facebook.com/chhavi.k16" target="_blank"><i class="fa fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </footer>
+    <link rel="stylesheet" href="Assets/style/style.css"> 
+    <script src="Assets/scripts/main.js"></script>
+</body>
+</html>

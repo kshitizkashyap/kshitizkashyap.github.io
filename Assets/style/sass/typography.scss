@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Open+Sans&display=swap');
+:root{
+    font-size: (16/$w-height) * 100vh;
+}
+
+.span-yellow{
+    color: $yellow;
+}
+
+//navigation
+
+nav{
+    a{
+        font-size: 0.8rem;
+        font-family: $font2;
+    }
+}
+#home-nav{
+    a{
+        color: #ffffff;
+        &:hover{
+            color: $yellow;
+        }
+    }
+}
+
+#home-landing-info{
+    #Hi{
+        font-family: $font1;
+        font-size: 4rem;
+        font-weight: bolder;
+        line-height: 156%;
+        color: #fff;
+        
+    }
+    #intro{
+        font-family: $font2;
+        font-size: 1.75rem;
+        line-height: 220%;
+        font-weight: lighter;
+        color: #999999;
+    }
+}
+
+//about
+#about-landing-info{
+    #Hi{
+        font-family: $font1;
+        font-size: 4rem;
+        font-weight: 900;
+        line-height: 156%;
+        color: #191919;
+    }
+}
+.about-info{
+    margin: 12vh 12vh 0 0;
+    padding-bottom: 10px;
+    font-family: $font2;
+    font-size: 1rem;
+    line-height: 140%;
+    color: #191919;
+    #instagram-link, #sdslabs-link{
+        color: $yellow;
+        text-decoration: none;
+    }
+}
+
+#about-nav{
+    a{
+        color: #191919;
+        &:hover{
+            color: $yellow;
+        }
+    }
+}
+
+//projects
+
+.title{
+    font-size: 2rem;
+    font-family: $font1;
+    font-weight: bold;
+    color: #fff;
+}
+.category{
+    font-size: 1rem;
+    font-family: $font1;
+    color: #fff;
+}
+.desc{
+    text-align: center;
+    font-size: 1rem;
+    font-family: $font2;
+    line-height: 150%;
+    color: #fff;
+}
+.view{
+    color: $yellow;
+    font-family: $font1;
+}
+.period{
+    font-size: 0.8rem;
+    font-family: $font2;
+    color: #efefef;
+}
+
+//project-blogs
+
+.blog-body{
+    .blog-paragraph{
+        font-family: $font2;
+
+        *{
+            line-height: 200%;
+            color: #191919;
+        }
+        .blog-heading{
+            line-height: 120%;
+            font-family: $font1;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #aaaaaa;
+        }
+        .blog-subheading{
+            font-family: $font2;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        b{
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+    }
+    .image-caption{
+        font-style: italic;
+        font-size: 0.9rem;
+        color: #666666;
+    }
+}
+
+#vision{
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #09d261;
+}
+
+
+//footer
+.footer-heading{
+    p{
+        font-family: $font1;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+.email{
+    p{
+        font-family: $font2;
+        font-size: 1rem;
+    }
+}
+.social{
+    a{
+        font-size: 1rem;
+        &:hover{
+            color: $yellow;
+        }
+    }
+}
+
+.home-footer{
+    color: #f0f0f0;
+    .icon{
+        color: #f0f0f0;
+    }
+}
+
+.about-footer{
+    color: #191919;
+    .icon{
+        color: #191919;
+    }
+}

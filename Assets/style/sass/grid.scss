@@ -1,0 +1,139 @@
+.section-container{
+    width: calc(100vw - (2*#{$v-margin})* 1vw);
+    margin: auto ($v-margin * 1vw);
+}
+
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    &-row{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+  
+  [class*='col-'] {
+    float: left;
+    min-height: 1px;
+  }
+  
+  $grid-cols: 12;
+  
+  @for $i from 1 through $grid-cols{
+    .col-#{$i}{
+      flex-basis: (100/($grid-cols / $i))*1%;
+      &:first-child{
+        margin-left: 0;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+
+ 
+  @media only screen and (max-width: 1025px) {
+    [class*="col-"] {
+      width: 100%;
+    }
+    #about{
+      .container-row{
+        flex-wrap: wrap-reverse;
+      }
+      #about-landing-info{
+        height: auto;
+      }
+      #Hi{
+        font-size: 3rem;
+      }
+      .about-info{
+        margin: 6vh 0 5vh 0;
+      }
+    }
+    #home-landing-info{
+      .container-row{
+        justify-content: center;
+        height: 50%;
+      }
+      #Hi{
+        font-size: 3rem;
+      }
+      #intro{
+        font-size: 1.4rem;
+      }
+    }
+    #projects{
+      width: 90%;
+    }
+    .container-row{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .social{
+      justify-content: center;
+      align-items: center;
+    }
+    footer{
+      .container-row{
+          margin: 16vh 0 10vh 0;
+          align-items: center;
+          justify-content: space-around;
+      }
+      .footer-heading{
+          p{
+              padding: 2vh 0;
+              text-align: center;
+          }
+      }
+      .email{
+          display: flex;
+          justify-content: center;
+          padding: 1vh;
+          p{
+              padding: 2vh 0;
+              text-align: center;
+          }
+      }
+      .social{
+          padding: 1vh 0;
+          display: flex;
+          justify-content: center;
+          .app-icons-list{
+              display: flex;
+              flex-direction: row;
+              .icon{
+                  margin: 0 2vh;
+                  padding: 1vh 0;
+              }
+          }
+      }
+  }
+  }
+
+  @media only screen and (max-width: 768px) {
+    [class*="col-"] {
+      width: 100%;
+    }
+    #projects-link{
+      display: none;
+    }
+    #home-landing-info{
+      .container-row{
+        height: 75%;
+      }
+      #Hi{
+        font-size: 3rem;
+      }
+      #intro{
+        font-size: 1.4rem;
+      }
+    }
+    .container-row{
+      flex-direction: column;
+      align-items: center;
+    }
+    
+  }

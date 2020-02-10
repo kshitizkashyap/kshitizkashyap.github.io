@@ -1,0 +1,47 @@
+nav{
+    position: fixed;
+    z-index: 3;
+    [id*='-nav']{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: (58 / $w-height) * 100vh;
+        
+        a{
+            height: 100%;
+            margin: auto ((20 / $w-height) * 100vh);
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #heading{
+            margin-left: 0;
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+        }
+    }   
+}
+
+
+//status-percentage
+
+.status{
+    width: 0;
+    height: 5px;
+    position: fixed;
+    z-index: 4;
+}
+#ego{
+    background-color: #09d261;
+}
+#accounts{
+    background-color: #e85d41;
+}
+#cleartax{
+    background-color: #00a0ff;
+}

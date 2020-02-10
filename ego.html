@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>E-Go Design Sprint</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="status" id="ego"></div>
+    <nav class = "container" style="background-color: #ffffff;">
+        <div class="section-container" id="about-nav">
+            <a id="heading" href="index.html">Kshitiz Kashyap</a>
+            <div id="inside-nav">
+                <a href="index.html#projects" id="projects-link">Projects</a>
+                <a href="about.html">About</a>
+                <a href="Assets/Resume.pdf" target="_blank">Résumé</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container blog-cover" >
+        <img src="Assets/images/ego/Cover.png" alt="">
+    </div>
+    <div class="section-container blog-body">
+        <div class="blog-paragraph">
+            <h1 class="blog-heading">Overview</h1>
+            <p>We conducted a 2-day design sprint with a given problem statement focusing on the problems IITR junta faces around e-rickshaws in the campus. There were three teams with around six members in each,  who worked on proposing an application for the above problem.</p>
+        </div>
+        <div class="blog-paragraph" id="problem-statement">
+            <h1 class="blog-heading">Problem Statement</h1>
+            <h2 class="blog-subheading">Problems Specified:</h2>
+            <ol>
+                E-rickshaws are the primary means of commute inside the campus. They have a large user base including students and residents. Manual rickshaws exist but are time-consuming and relatively expensive. The problems associated with the current system.
+                <li>Digital payment is not accepted.</li>
+                <li>Availability of e-rickshaws at certain hours or at certain places in the campus.</li>
+                <li>Route of rickshaws is not optimized according to the different destinations of different users sitting in it.</li>
+                <li>Verification of outside rickshaws.</li>
+                <li>Difficult for rickshaw drivers to find rides, heated disputes between drivers. Function in an unorganized manner.</li>
+                <li>Prices specified by administration and amount that drivers actually charge are different.</li>
+            </ol>
+            <h2 class="blog-subheading">Assumed Data:</h2>
+            <ul>
+                <li>Total no. of registered e-rickshaws in the campus: 40.</li>
+                <li>Rickshaw stands in the campus and their density at a different time (They mainly exist outside Kasturba Bhawan Hostel and Rajiv Bhawan Hostel).</li>
+                <li>No. of outside rickshaws in the campus at a given time (at Rajiv Bhawan max 10, Kasturba Bhawan around 5).</li>
+                <li>No. of drivers who accept payments through Paytm (about 1/4th of total).</li>
+            </ul>
+        </div>
+        <div class="blog-paragraph">
+            <p>For the sprint, we followed the three stage diamond model.</p>
+            <div class="blog-image">
+
+                <img src="Assets/images/ego/diamond-model.png" alt="">
+                <p class="image-caption"></p>
+            </div>
+        </div>
+        <div class="blog-paragraph">
+            <h1 class="blog-heading">1. Understand</h1>
+            <h2 class="blog-sub-heading">HMW Notes and Affinity Clustering</h2>
+            <p>We started off by making HMW notes in which we wrote down whatever pain points, ideas, and solutions came to our heads related to the problem.
+               <br/> To organize these notes, we segregated them into groups.   </p>
+            <div class="blog-image">
+
+                <img src="Assets/images/ego/affinity-mapping.png" alt="">
+                <p class="image-caption"> </p>
+            </div>
+            <h2 class="blog-subheading">User Journey Mapping</h2>
+            <div class="blog-image">
+
+                <img src="Assets/images/ego/user-journey.png" alt="">
+                <p class="image-caption"></p>
+            </div>
+            
+        </div>
+        <div class="blog-paragraph">
+            <h1 class="blog-heading">2. Define</h1>
+            <h2 class="blog-subheading">Coming up with our Vision Statement</h2>
+            <p>We defined our vision statement to provide a direction to our next steps - 
+                <span id="vision">
+                    <br>"Get a great ride, whenever, wherever!"<br>
+                </span>
+                To accomplish this, we needed to eliminate the problems of unavailability at specific locations, difficulty in payment, and also ensure that the rider reached his destination on time and could report any issues post drop off.</p>
+            <h2 class="blog-subheading">Defining the Golden Path</h2>
+            <p>Based on our HMW notes, we identified the most ideal, inclusive path which we wanted to make possible for the rider.</p>
+            <div class="blog-image">
+                <img src="Assets/images/ego/golden-path.png" alt="">
+                <p class="image-caption"></p>
+
+            </div>
+        </div>
+        <div class="blog-paragraph">
+            <h1 class="blog-heading">3. Solution Sketching</h1>
+            <p></p>
+            <div class="blog-image">
+
+                <img src="Assets/images/ego/solution-sketching.png" alt="">
+                <p class="image-caption"> </p>
+            </div>
+        </div>
+        <div class="blog-paragraph">
+            <h1 class="blog-heading">4. Decide</h1>
+            <div class="blog-image">
+
+                <img src="Assets/images/ego/decide.png" alt="">
+                <p class="image-caption"></p>
+            </div>
+            <ol>
+                Based on the importance and viability of solutions, we decided to focus on:
+                <li>Locating e-rickshaws and tracking their availability</li>
+                <li>Improving experience of booking e-rickshaws</li>
+                <li>Making payment possible through multiple modes and the issue of not having cash/change</li>
+                <li>Security and tracking of lost items</li>
+            </ol>
+            <h2 class="blog-subheading">Locating E-rickshaws and tracking their availability</h2>
+            <p>
+                <span class="brief">
+                    Presently, e-ricks cluster at specific locations and are often unavailable in some areas. This makes the users in that area unclear about the presence of any e-rickshaws nearby.  
+                </span>
+                <br>
+                So we proposed to track the e-ricks by using the driver's GPS and show this in the user's app. We also decided to provide contact details of the nearby drivers in the app so that the user can call them to his location or call them for any clarifications.
+            </p>
+            <div class="blog-image">
+                <img src="Assets/images/ego/locate.png" alt="">
+                <p class="image-caption"></p>
+
+            </div>
+            <h2 class="blog-subheading">Making multiple modes of payment possible</h2>
+            <p>
+                <span class="brief">On interviewing the e-rick drivers, we found out that most of them had bank accounts and debit cards. Also, they were ok with payments being made directly to their bank accounts.</span><br>
+                We proposed making the driver's bank details available through the app and also making payment possible from within the app.
+                <br>On the driver-side app, we included a passbook feature so that the drivers can view all the payments and keep track of them.
+            </p>
+            <div class="blog-image">
+
+                <img src="Assets/images/ego/payment.png" alt="">
+                <p class="image-caption"></p>
+            </div>
+            <h2 class="blog-subheading">Improving the booking experience</h2>
+            <p>
+                <span class="brief">Currently, E-rickshaw bookings are possible only by contacting rickshaw drivers and that too only 4-5 drivers
+                    (who stay in the campus) generally take these bookings.</span><br>
+                    So on the driver-side app we provided an option to allow/deny bookings. When a user makes a booking request on user-side app, a notification is sent to all
+                    the drivers who had allowed taking bookings on their apps. The first driver to confirm gets the booking and the contact information of the rider and the driver are displayed to each other so that they can interact smoothly. 
+            </p>
+            <div class="blog-image">
+
+                <img src="Assets/images/ego/booking.png" alt="">
+                <p class="image-caption">a)User side booking screens. b)Driver side booking acceptance screens.</p>
+            </div>
+            <h2 class="blog-subheading">Ensuring security and improving trackability of lost items</h2>
+            <p>
+                <span class="brief">Finding the solution to this was one of the most challenging tasks during the sprint as we were not able to figure out how to make the users remember the e-rickshaw they rode on.</span><br>
+                Upon much thinking, we thought of providing a permanent e-rick ID to each rickshaw and use this to track and maintain a database of driver details. Now to make riders aware of this e-rick ID, stickers of IDs will be present at highly visible locations within the rickshaw. This e-rick id can be used by a passenger to report a driver for misbehavior/ charging extra and can also use it to contact a driver to track down luggage lost in an e-rickshaw. Even if a rider misses the e-rick ID, the app will take details of lost luggage and send it along with the rider's details to the control room.
+            </p>
+            <div class="blog-image">
+                <img src="Assets/images/ego/report.png" alt="">
+                <p class="image-caption"></p>
+            </div>
+        </div>
+        <div class="blog-paragraph">
+            <h1 class="blog-heading">5. Prototyping</h1>
+            <h2 class="blog-subheading">User Side Flow</h2>
+            <div class="blog-image">
+                <img src="Assets/images/ego/userside-flow.png" alt="">
+                <p class="image-caption"></p>
+            </div>
+            <h2 class="blog-subheading">User Side Screens</h2>
+            <div class="blog-image">
+                <img src="Assets/images/ego/userside.png" alt="">
+                <p class="image-caption"></p>
+            </div>
+            <h2 class="blog-subheading">Driver Side Flow</h2>
+            <div class="blog-image">
+                <img src="Assets/images/ego/driverside-flow.png" alt="">
+                <p class="image-caption"></p>
+            </div>
+            <h2 class="blog-subheading">Driver Side screens</h2>
+            <p>The driver-side screens were designed with big CTAs and minimal information, keeping in mind the less familiarity of e-rick drivers with tech.</p>
+            <div class="blog-image">
+                <img src="Assets/images/ego/driverside.png" alt="">
+                <p class="image-caption"></p>
+            </div>
+        </div>
+        <div class="blog-paragraph">
+            <h1 class="blog-heading">Team & My Contributions</h1>
+            <p>My team comprised six members, with 3 of them having 2-3 years of experience in design and the rest of us were newbies. So working with them definitely helped me get to know about the various methods better. I actively participated in the discussions during the various phases of the sprint, bringing my ideas to the table(although only a few of them got accepted, Lol). I made the wireframes alongside the seniors, and I was assigned the task of designing the complete UI of the driver-side app. </p>
+        </div>
+        <div class="blog-paragraph">
+            <h1 class="blog-heading">Summing Up</h1>
+            <p> Overall the sprint was a fun and insightful activity with each team striving hard to come up with the best solution. And guess what, the three teams came up with unique solutions for the above problem in just two days.</p>
+                <div class="blog-image">
+                    <img src="Assets/images/ego/group.jpeg" alt="">
+                </div>
+        </div>
+    </div>
+    <footer class="container section-container about-footer">
+        <div class="container-row">
+            <div class="footer-heading col-4">
+                <p>Let's <span class="span-yellow">Connect.</span></p>
+            </div>
+            <div class="email col-4">
+                <p>kshitizkashyap1@gmail.com</p>
+            </div>
+            <div class="social col-4">
+                <div class="app-icons-list">
+                    <a class="icon" href="https://www.behance.net/chhavikashe3cf" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a class="icon" href="https://www.instagram.com/chhavi.k16/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a class="icon" href="https://www.facebook.com/chhavi.k16" target="_blank"><i class="fa fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Assets/style/style.css">
+    <script src="Assets/scripts/main.js"></script>
+</body>
+</html>
